@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * function that checks that checks for a lowercaes
  * character. Returns 1 if c is lowercase, returns 
  * 0 otherwise.
