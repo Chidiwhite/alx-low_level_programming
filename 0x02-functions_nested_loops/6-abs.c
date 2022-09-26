@@ -6,19 +6,9 @@
  *
  * Return: absolute value of ab
  */
-int _abs(int n)
+int _abs(int ab)
 {
-	n = _abs(-1);
-	printf("%d\n", n);
+	
+	return (ab * ((ab > 0) - (ab < 0)));
 
-	n = _abs(0);
-	printf("%d\n", n);
-
-	n = _abs(1);
-	printf("%d\n", n);
-
-	n = _abs(-98);
-	printf("%d\n", n);
-
-	return (0);
 }
