@@ -208,7 +208,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 		case ET_EXEC:
 			printf("EXEC (Executable file)\n");
 			break;
-		case ET_DYN:			
+		case ET_DYN:
 			printf("DYN (Shared object file)\n");
 			break;
 		case ET_CORE:
@@ -237,7 +237,6 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 
 	if (e_ident[EI_CLASS] == ELFCLASS32)
 		printf("%#x\n", (unsigned int)e_entry);
-
 	else
 		printf("%#lx\n", e_entry);
 }
@@ -305,7 +304,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	print_abi(header->e_ident);
 	print_type(header->e_type, header->e_ident);
 	print_entry(header->e_entry, header->e_ident);
-
 
 	free(header);
 	close_elf(o);
